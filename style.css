@@ -265,4 +265,134 @@ section {
   font-weight: 700;
   letter-spacing: 2.5px;
   fill: var(--ink);
-  font-fami
+  font-family: "Inter", sans-serif;
+}
+
+.badge-center {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  color: var(--accent);
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.marquee {
+  border-top: 2px solid var(--ink);
+  border-bottom: 2px solid var(--ink);
+  background: var(--accent);
+  overflow: hidden;
+  padding: 12px 0;
+}
+
+.marquee-track {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  width: max-content;
+  animation: slide 22s linear infinite;
+}
+
+.marquee-track span {
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--paper);
+  white-space: nowrap;
+}
+
+.marquee-track i {
+  color: var(--paper);
+  font-style: normal;
+}
+
+@keyframes slide {
+  to { transform: translateX(-50%); }
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 32px;
+  margin-bottom: 40px;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  color: #3d382e;
+  margin-bottom: 18px;
+}
+
+.now-box {
+  background: var(--card);
+  border: 2px solid var(--ink);
+  border-radius: 14px;
+  padding: 26px;
+  box-shadow: 5px 5px 0 var(--accent);
+  align-self: start;
+  transform: rotate(1.2deg);
+}
+
+.now-box h3 {
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 1.3rem;
+  margin-bottom: 14px;
+}
+
+.now-box ul {
+  list-style: none;
+}
+
+.now-box li {
+  padding: 8px 0;
+  border-bottom: 1px dashed #d8cfba;
+  font-size: 0.98rem;
+}
+
+.now-box li:last-child {
+  border-bottom: none;
+}
+
+.edu {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.edu-item {
+  border: 2px solid var(--ink);
+  border-radius: 12px;
+  padding: 22px;
+  background: var(--card);
+  transition: transform 0.2s;
+}
+
+.edu-item:hover {
+  transform: translateY(-4px);
+}
+
+.edu-year {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  background: var(--accent-soft);
+  color: var(--accent);
+  padding: 3px 12px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+.edu-item h3 {
+  font-size: 1.1rem;
+  margin-bottom: 4px;
+}
+
+.edu-item p:last-child {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
