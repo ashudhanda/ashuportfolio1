@@ -31,4 +31,29 @@ body {
 }
 
 section {
-  padding: 100
+  padding: 100px 7%;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: var(--accent);
+  margin-bottom: 14px;
+}
+
+.big-title {
+  font-family: "Fraunces", Georgia, serif;
+  font-size: clamp(2.2rem, 5vw, 3.6rem);
+  line-height: 1.08;
+  font-weight: 600;
+  margin-bottom: 48px;
+  max-width: 640px;
+}
+
+.big-title em {
+  font-style: italic;
+  
