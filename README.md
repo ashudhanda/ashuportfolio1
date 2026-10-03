@@ -22,4 +22,4 @@ npx serve .
 
 ## Contact
 
-Ashu Dhanda — ashudhanda33@gmail.com
+Ashu Dhanda — ashudhanda755@gmail.com
